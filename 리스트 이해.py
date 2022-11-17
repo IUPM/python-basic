@@ -47,7 +47,7 @@ print(a, "\n", b)
 # 딕셔너리 자료형
 
 # 기본 딕셔너리 자료형 {key1: value1, key2 : value2}
-
+'''
 dic = {'name' : 'mino', 'phone' : '9420', 'birth' : "1234"}
 
 print(dic)
@@ -80,9 +80,43 @@ print(dic_keys)
 # 리스트로만 바꾸려면..
 b = list(dic.keys())
 print (b)
-
+'''
 # key, value 쌍 얻기
 # dic.items()를 통해서 얻을 수 있다. list(dic.items()) 가능
 
 # dic.clear() 전부다 삭제
 
+# key 에 name, birth, age value에 각각 홍길동 1128 30 딕셔너리 만들기
+'''
+a = {'name' : "홍길동" , 'birth': 1128, 'age': 30}
+print (a)
+'''
+
+# 집합 자료형 (set)
+# set 자료형의 특징은 중복을 허용하지 않고 순서가 없는데
+# 다른 집합과의 차, 교, 합 집합을 표시하는데 용이하다.
+'''
+s1 = set([1,2,3,4])
+s2 = set([3,4,5,6,7,8,8,9,10])
+print(s1)
+print(s2)
+
+# 교집합은 &(intersection)을 통해서 구한다.
+c = s1 & s2 #c = s1.intersection(s2)
+print(c)
+
+# 합집합은 |(union)을 통해서 구한다.
+d = s1 | s2 # d = s1.union(s2)
+print(d)
+
+# 차집합은 -(difference)를 통해서 구한다.
+print(s1 - s2) #print(s1.difference(s2))
+print(s2 - s1) #print(s2.difference(s1))
+
+# 값 1개 추가는 add 여러개는 update로 함 제거는 remove로
+
+s1.add(4)
+s1.update([6,7,8,9])
+print(s1)
+s1.remove(9)
+'''
